@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+.header {
+    background-color: #fff;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 40px;
+    background-color: #d99e00;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav h1 {
+    font-size: 24px;
+    margin: 0;
+    color: white;
+  }
+  
+  .nav nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  }
+  
+  .nav nav a:hover {
+    color: #a37800;
+  }
+  
+  main h2 {
+    text-align: start;
+    margin-bottom: 10px;
+    padding: 10px;
+
+  }
+
+  main h3{
+    padding: 20px;
+  }
+
+  .booking-details{
+    display: flex;
+    justify-content: center;
+  }
+
+  .invisible-table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 1em auto;
+  }
+  
+  .invisible-table th,
+  .invisible-table td {
+    padding: 0.75em;
+    border: none;
+    vertical-align: middle;
+    text-align: left;
+    margin-block-start: 20px;
+  }
+  
+  .invisible-table thead th {
+    font-weight: bold;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .invisible-table td:nth-child(3),
+  .invisible-table th:nth-child(3) {
+    width: 150px;
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .status.complete {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .status.incomplete {
+    color: red;
+    font-weight: bold;
+  }
