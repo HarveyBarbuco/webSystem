@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head>  
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booking</title>
     <link rel="Stylesheet" href="Booking.css">
+    <link rel="icon" href="path/to/your/favicon.ico">
+
+
 </head>
 <body>
-    <h1>Wedding Booking Form</h1>
-
-    <div class ="BookingfrmBox">
+    <form id="weddingForm">
+      <div class ="BookingfrmBox">
+        <h1>Wedding Booking Form</h1>
         <div class ="txtBox1">
             <div class="input">
                 <label for="Groomfname">Groom's First Name</label>
-                <input type="text" id="groomFname" name="groomFname">
+                <input type="text" id="groomFname" name="groomFname" required>
             </div>
         </div>
 
         <div class ="txtBox2">
             <div class ="input">
                 <label for="Groomlname">Groom's Last Name</label>
-                <input type="text" id="groomLname" name="groomLname">
+                <input type="text" id="groomLname" name="groomLname" required>
             </div>
         </div>
 
         <div class ="txtBox3">
             <div class ="input">
                 <label for="Bridefname">Bride's First Name</label>
-                <input type="text" id="brideFname" name="brideFname">
+                <input type="text" id="brideFname" name="brideFname" required>
             </div>
         </div>
 
         <div class ="txtbox4">
             <div class="input">
                 <label for="Bridelname">Bride's Last Name</label>
-                <input type="text" id="brideLname" name="brideLname">
+                <input type="text" id="brideLname" name="brideLname" required>
             </div>
         </div>
 
         <div class ="txtbox5">
             <div class="input">
                 <label for="Email">Email Address</label>
-                <input type="text" id="email" name="email">
+                <input type="text" id="email" name="email" required>
             </div>
         </div>
 
         <div class ="txtbox6">
             <div class="input">
                 <label for="Contact">Contact Number</label>
-                <input type="text" id="contact" name="contact">
+                <input type="tel" id="contact" name="contact" required>
             </div>
         </div>
 
         <div class ="txtbox7">
             <div class="input">
                 <label for="wedDate">Wedding Planning Date</label>
-                <input type="text" id="date" name="date">
+                <input type="date" id="date" name="date" required>
             </div>
         </div>
 
         <div class ="txtbox8">
             <div class="input">
                 <label for="Venue">Venue</label>
-                <input type="text" id="venue" name="venue">
+                <input type="text" id="venue" name="venue" required>
             </div>
         </div>
 
         <div class ="txtbox9">
             <div class="input">
                 <label for="Pax">Pax</label>
-                <input type="text" id="pax" name="pax">
+                <input type="text" id="pax" name="pax" required>
             </div>
         </div>
 
         <div class ="txtbox10">
             <div class="input">
                 <label for="Location">Location</label>
-                <input type="text" id="location" name="location">
+                <input type="text" id="location" name="location" required>
             </div>
         </div>
 
 
         <div class="questionGrid">
-        <div class="question">
+          <div class="question">
             <label>Are we providing photographers?</label>
             <div class="optionGroup">
               <label class="radioLabel">
@@ -90,16 +93,16 @@
               </label>
               <label class="radioLabel">
                 <input type="radio" name="photographers" value="yes"> If yes
-                <select>
-                  <option>Select</option>
-                  <option>Example 1</option>
-                  <option>Example 2</option>
-                </select>
               </label>
+              <select class="customSelect">
+                <option>Select</option>
+                <option>Dexter Photography</option>
+                <option>Jagan Studios</option>
+              </select>
             </div>
           </div>
-        
-        <div class="question">
+          
+          <div class="question">
             <label>Are we providing caterings?</label>
             <div class="optionGroup">
               <label class="radioLabel">
@@ -107,15 +110,15 @@
               </label>
               <label class="radioLabel">
                 <input type="radio" name="caterings" value="yes"> If yes
-                <select>
-                  <option>Select</option>
-                  <option>Example 1</option>
-                  <option>Example 2</option>
-                </select>
               </label>
+              <select class="customSelect">
+                <option>Select</option>
+                <option>Mhon'ske</option>
+                <option>Barbs Kitchen</option>
+              </select>
             </div>
           </div>
-        
+          
           <div class="question">
             <label>Are we providing entertainers?</label>
             <div class="optionGroup">
@@ -124,20 +127,23 @@
               </label>
               <label class="radioLabel">
                 <input type="radio" name="entertainers" value="yes"> If yes
-                <select>
-                  <option>Select</option>
-                  <option>Example 1</option>
-                  <option>Example 2</option>
-                </select>
               </label>
+              <select class="customSelect">
+                <option>Select</option>
+                <option>Jeric's Entertainers</option>
+                <option>JanuBald's Entertainers</option>
+              </select>
             </div>
           </div>
         </div>
+        <div class="submitButton">
+    <button type="submit" class="submit" id="submit">Submit</button>
+  </div>
+      </div>
 </div>
 
-<div class="submitButton">
-    <button class="submit" id="submit">Submit</button>
-</div>
+    </form>
+    <script type="module" src="Booking.js"></script>
 
 </body>
 </html>

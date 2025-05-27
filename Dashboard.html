@@ -6,22 +6,21 @@
   <title>Wedding Booking</title>
   <link rel="stylesheet" href="Dashboard.css"/>
 </head>
-
 <body>
   <header class="hero-section">
     <div class="navbar">
-      <div class="logo">Wedding Website</div>
+      <div class="logo">PlanMyVow</div>
       <nav class="nav-links">
-        <a href="https://example.com">Home</a>
-        <a href="https://example.com">Services & Amenities</a>
-        <a href="https://example.com">Contact Us</a>
+        <a href="Dashboard.html">Home</a>
+        <a href="#service">Services & Amenities</a>
+        <a href="#contact">Contact Us</a>
       </nav>
     </div>
     <div class="hero-content">
       <h1>MAKE YOUR DREAM WEDDING UNFORGETTABLE</h1>
       <p>Plan with us and celebrate love that lasts forever.</p>
       <div class="hero-buttons">
-        <a href="#" class="btn-primary">Book Now</a>
+        <a href="Booking.html" class="btn-primary">Book Now</a>
         <a href="#ref-lookup" class="btn-secondary">Check Booking</a>
       </div>
     </div>
@@ -32,12 +31,43 @@
     <p>Welcome to our wedding booking website, where your special day becomes a beautiful reality.</p>
   </section>
 
+  <div id="service" class="services-container">
+  <div class ="serviceBox">
+    <h2>Service & Amenities</h2>
+    <img src="Dashboard/Services.png" style="width: 700px;">
+
+    <div id="amenities" class="amenities-container">
+      <img src="Dashboard/Amenities.png" style="width: 700px;">
+    </div>
+  </div>
+
+  <div id="contact" class="contact-container">
+    <p class="contact-header"><strong><em>Contact Us Here:</em></strong></p>
+
+    <p><strong>Landlines:</strong><br>
+    <span class="contact-detail">(04) 2-475-4369</span></p>
+
+    <p><strong>Facebook:</strong><br>
+    <span class="contact-detail">facebook.com/WeddingWEb</span></p>
+
+    <p><strong>Instagram:</strong><br>
+    <span class="contact-detail">instagram.com/WeddWeb</span></p>
+
+    <p><strong>Email:</strong><br>
+    <a href="mailto:Example@gmail.com" class="contact-detail">WeddingWeb@gmail.com</a></p>
+
+    <p><strong>Or Visit us at:</strong><br>
+    <span class="contact-detail">N. Guevarra Street, Zone 1</span></p>
+    <span class="contact-detail">Dasmariñas, 4114 Cavite</span></p>
+  </div>
+
   <section class="reference-section" id="ref-lookup">
     <h2>Already Booked?</h2>
     <p>Enter your reference number to view your booking details:</p>
-    <input type="text" placeholder="Enter Reference Number" class="ref-input"/>
-    <button class="btn-primary">Submit</button>
+    <input type="text" id="referenceInput" placeholder="Enter Reference Number" class="ref-input"/>
+    <button class="btn-primary" onclick="lookupReference()">Submit</button>
   </section>
-</body>
 
+  <script src="Dashboard.js"></script>
+</body>
 </html>
